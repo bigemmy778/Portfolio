@@ -3,7 +3,7 @@ import project2 from "../../assets/image/Movies.jpg";
 import project3 from "../../assets/image/Var.jpg";
 import project4 from "../../assets/image/Ecommerce.jpg";
 import project6 from "../../assets/image/Weather.jpg";
-import project7 from "../../assets/image/Admin.jpg";
+import project7 from "../../assets/image/admin.jpg";
 import project8 from "../../assets/image/Cocktail.jpg";
 
 export const projects = [
