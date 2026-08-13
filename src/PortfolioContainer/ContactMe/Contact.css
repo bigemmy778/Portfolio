@@ -1,0 +1,403 @@
+/* ==============================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    padding: 100px 20px;
+    background: #f8f9fc;
+  }
+  
+  /* ==============================
+     SECTION HEADING
+  ================================= */
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .section-heading h2 {
+    font-size: 2.5rem;
+    color: #1f2235;
+  }
+  
+  .section-heading p {
+    color: #666;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .heading-line {
+    width: 180px;
+    height: 3px;
+    background: #ddd;
+    margin: 18px auto;
+    position: relative;
+  }
+  
+  .heading-line span {
+    position: absolute;
+    width: 45px;
+    height: 8px;
+    background: #ff5823;
+    border-radius: 20px;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* ==============================
+     TWO COLUMN LAYOUT
+  ================================= */
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  
+    align-items: center;
+  }
+  
+  /* ==============================
+     LEFT SIDE
+  ================================= */
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    color: #1f2235;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h2 span {
+    color: #ff5823;
+  }
+  
+  .contact-text {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 35px;
+  }
+  
+  /* ==============================
+     SOCIAL ICONS
+  ================================= */
+  
+  .contact-socials {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-socials a {
+    width: 48px;
+    height: 48px;
+  
+    border-radius: 50%;
+  
+    background: white;
+  
+    color: #1f2235;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 20px;
+  
+    text-decoration: none;
+  
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  
+    transition: .35s;
+  }
+  
+  .contact-socials a:hover {
+    background: #ff5823;
+    color: white;
+    transform: translateY(-6px);
+  }
+  
+  /* ==============================
+     CONTACT IMAGE
+  ================================= */
+  
+  .contact-image {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+  }
+  
+  .contact-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .contact-image:hover{
+    transform: scale(1.08);;
+    transition: 0.45s ease-in-out;
+
+  }
+  
+  /* ==============================
+     FORM CONTAINER
+  ================================= */
+  
+  .contact-form-container {
+  
+    background: white;
+  
+    border-radius: 18px;
+  
+    padding: 35px;
+  
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  }
+  
+  /* ==============================
+     FORM
+  ================================= */
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ==============================
+     FORM GROUP
+  ================================= */
+  
+  .form-group {
+    margin-bottom: 22px;
+  }
+  
+  .form-group label {
+  
+    display: block;
+  
+    margin-bottom: 8px;
+  
+    font-weight: 600;
+  
+    color: #1f2235;
+  }
+  
+  /* ==============================
+     INPUTS
+  ================================= */
+  
+  .form-group input,
+  .form-group textarea {
+  
+    width: 100%;
+  
+    padding: 14px 18px;
+  
+    border: 2px solid #ececec;
+  
+    border-radius: 10px;
+  
+    outline: none;
+  
+    font-size: 1rem;
+  
+    transition: .3s;
+  
+    resize: none;
+  
+    background: #fafafa;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+  
+    border-color: #ff5823;
+  
+    background: white;
+  
+    box-shadow: 0 0 10px rgba(255,88,35,.15);
+  }
+  
+  /* ==============================
+     ERROR MESSAGE
+  ================================= */
+  
+  .error {
+  
+    color: crimson;
+  
+    font-size: .85rem;
+  
+    margin-top: 6px;
+  
+    display: block;
+  }
+  
+  /* ==============================
+     SEND BUTTON
+  ================================= */
+  
+  .send-btn {
+  
+    background: #ff5823;
+  
+    color: white;
+  
+    border: none;
+  
+    padding: 15px;
+  
+    border-radius: 40px;
+  
+    font-size: 1rem;
+  
+    font-weight: bold;
+  
+    cursor: pointer;
+  
+    transition: .35s;
+  }
+  
+  .send-btn:hover {
+  
+    background: #1f2235;
+  
+    transform: translateY(-3px);
+  }
+  
+  .send-btn:disabled {
+  
+    opacity: .7;
+  
+    cursor: not-allowed;
+  }
+
+  /* ===========================
+   BACK TO TOP BUTTON
+=========================== */
+
+.back-to-top{
+
+  position: fixed;
+
+  right: 35px;
+
+  bottom: 35px;
+
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: #ff5823;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 22px;
+
+  text-decoration: none;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+
+  transition: .35s;
+
+  z-index: 1000;
+}
+
+.back-to-top:hover{
+
+  background:#1f2235;
+
+  transform: translateY(-6px);
+}
+  
+  /* ==============================
+     RESPONSIVE
+  ================================= */
+  
+  @media (max-width: 992px) {
+  
+    .contact-container {
+  
+      grid-template-columns: 1fr;
+  
+      gap: 50px;
+    }
+  
+    .contact-info {
+  
+      text-align: center;
+    }
+  
+    .contact-socials {
+  
+      justify-content: center;
+    }
+  
+    .contact-image img {
+  
+      max-width: 350px;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    .contact{
+  
+      padding:80px 20px;
+    }
+  
+    .section-heading h2{
+  
+      font-size:2rem;
+    }
+  
+    .contact-info h2{
+  
+      font-size:1.7rem;
+    }
+  
+    .contact-form-container{
+  
+      padding:25px;
+    }
+  
+  }
+  
+  @media(max-width:480px){
+  
+    .contact{
+  
+      padding:70px 15px;
+    }
+  
+    .contact-form-container{
+  
+      padding:20px;
+    }
+  
+    .contact-socials{
+  
+      gap:12px;
+    }
+  
+    .contact-socials a{
+  
+      width:42px;
+      height:42px;
+      font-size:18px;
+    }
+  
+  }

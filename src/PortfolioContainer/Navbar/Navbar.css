@@ -1,0 +1,104 @@
+.navbar{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px 60px;
+    background:black;
+    color:white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.8px solid rgb(35, 35, 35);
+    padding: 1rem;
+    
+    
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: whitesmoke;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    cursor: pointer;
+}
+
+
+.nav-links a{
+    color:white;
+
+}
+.nav-links li a :hover{
+    color:rgb(102, 102, 102);
+    text-decoration:underline;
+    transition: 0.30s ease-in-out;
+}
+
+.hamburger{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    transition: .3s;
+}
+
+/* Remove browser outline */
+.hamburger:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Remove blue highlight on mobile browsers */
+.hamburger{
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .navbar{
+        justify-content: space-between;
+        padding-right:30px;
+        padding-left: 40px;
+    }
+
+    .hamburger{
+        display:block;
+        font-size: 23px;
+    }
+
+    .logo{
+        font-size: 23px;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:black;
+        flex-direction:column;
+        align-items:center;
+        display:none;
+        padding:20px 0;
+        height: 30rem;
+        backdrop-filter:blur(18px);
+        -webkit-backdrop-filter:blur(18px);
+       
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+}
